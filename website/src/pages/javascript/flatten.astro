@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Array and Object Flattening Challenge">
+  <div>
+    <h3 class="text-xl pt-2 pb-4">Description</h3>
+    <p>
+      The goal of this coding challenge is to write a function that takes in a
+      nested list of integers and returns a flattened list of integers, where
+      all nested lists are concatenated into a single list.
+    </p>
+    <h3 class="text-xl pt-2 pb-4">Example</h3>
+    <code>
+      <pre>
+      flatten([1, 2, [3, 4], 5]); // [1, 2, 3, 4, 5]
+      flatten([[1, 2], 3, [4, [5, 6]], 7]); // [1, 2, 3, 4, 5, 6, 7]
+      flatten([]); // []
+      flatten([1, [2, [3, [4]]]]); // [1, 2, 3, 4]
+    </pre>
+    </code>
+  </div>
+</Layout>

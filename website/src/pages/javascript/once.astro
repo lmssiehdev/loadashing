@@ -1,0 +1,27 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Array and Object Flattening Challenge">
+  <div>
+    <h3 class="text-xl pt-2 pb-4">Description</h3>
+    <p>
+      The goal of this challenge is to implement a function that takes in a
+      callback function and returns a new function that restricts the original
+      callback function to be invoked at most once.
+    </p>
+    <h3 class="text-xl pt-2 pb-4">Example</h3>
+    <code>
+      <pre>
+        {
+         ` 
+        const callback = () => console.log("Hello World!");
+        const restrictedCallback = once(callback);
+        restrictedCallback(); // prints "Hello World!"
+        restrictedCallback(); // does nothing
+        restrictedCallback(); // does nothing
+        `}
+    </pre>
+    </code>
+  </div>
+</Layout>
